@@ -1,0 +1,54 @@
+
+.bc2{
+background-color: #43a5cf;
+}
+.hgt {height: 400px;
+}
+.hgt2 {height: 124px;
+}
+.hgt3 {height: 55px;
+}
+
+.text_color {
+color: grey;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+/*gets animal's picture away from right side of window*/
+.offset{
+margin-right: -10px;
+
+}
+/* makes animal's portrait smaller for mobile devices*/
+@media(max-width:800px)
+{.shrink{width: 75px; height: 75px;
+
+ }
+}
+/*social media button magic*/
+.button{
+  color:#80876c;
+  border:solid 2px #edeff0;
+  border-radius:50%;
+  display:inline-block;
+  width:57px;
+  height:57px;
+  text-align:center;
+  font-size:30px;
+  line-height:48px;
+  -webkit-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+
+.button:hover {background-color: black}
+
+.button:active {
+  background-color: black;
+  box-shadow: 0 5px #5c5050;
+  transform: translateY(4px);
+}
+p {
+  font-size: 24px;
+}

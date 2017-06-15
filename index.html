@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>ANIMAL!!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--
+navbar
+------>
+
+  <body style="background-color: #919598;">
+  <script src="port.js"></script>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Animal's Drum Studio</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+
+        <ul class="nav navbar-nav pull-right">
+
+          <button class="btn navbar-btn" id="about_button"><span class="glyphicon glyphicon-sunglasses" ></span> About</button>
+          <button class="btn navbar-btn" id="portfolio_button"><span class="glyphicon glyphicon-briefcase" ></span> Portfolio</button>
+
+
+
+          <button class="btn navbar-btn"  id="button"><span class="glyphicon glyphicon-envelope"></span>    Contact</button>
+        </ul>
+        <br>
+      </div>
+    </div>
+  </nav>
+<!--main
+---->
+<!---about--->
+<div class="container-fluid" style="width:75%">
+  <div class="row" id="about">
+      <div class="col-xs-12 hgt " style="background-color:#eee;border-bottom: 2px solid #dfdce0;">
+        <br><br>
+        <h2>About</h2>
+        <p>Me name Animal. Me play drums.</p> <p> Me play loud and fast. </p>
+        <img src="http://muppethub.com/wp-content/uploads/2014/02/Animal-5.png" class="img-circle center-block shrink offset" alt="Cinque Terre" width="200" height="200">
+      </div>
+    </div>
+<!---portfolio--->
+  <div class="row " id="portfolio">
+        <div class="col-xs-12 hgt "  style="background-color:#eee; border-bottom: 2px solid #dfdce0">
+          <h2>Portfolio</h2>
+<!---carousel---->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3AZz9TSjZCM" frameborder="0" allowfullscreen style="width:100%;"></iframe>
+      </div>
+
+      <div class="item">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VJh9W3Gcpmo" frameborder="0" allowfullscreen style="width:100%;"></iframe>
+      </div>
+
+      <div class="item">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w8wIXXBOqxE" frameborder="0" allowfullscreen style="width:100%;"></iframe>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<!----
+contact form-does not really send info-there for aesthetics only
+---->
+  </div>
+  <div class="row" id="contact">
+      <div class="col-xs-12 container-fluid" style="background-color:#eee; ">
+        <h2>Contact</h2>
+        <form action="">
+First name:<br>
+<input type="text" name="firstname">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+<br>
+Email Address:<br>
+<input type="text" name="lastname">
+<br><br>
+<input type="submit" value="Send To Animal">
+</form>
+<br>
+<p class="font">Me available for celebrity jam and drum lesson. Please to fill out form. </p>
+<br>
+      </div>
+
+  </div>
+</div>
+<!---bottom-
+social media links and other filler
+---->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 hgt2" style="background-color: grey;"  align="center">
+      <h3>Around the Web</h3>
+
+        <a href="https://linkedin.com"><button class="button"><i class="fa fa-fw fa-linkedin" ></i></button></a>
+        <a href="https://facebook.com"><button class="button"><i class="fa fa-facebook" ></i></button></a>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 hgt3 text_color" style="background-color: black;">
+      <center><script>document.write(new Date().getFullYear())</script> All Right Paradiddles Reserved</center>
+    </div>
+  </div>
+</body>
+</html>
